@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="abc.css">
+</head>
+
+<body>
+    <div id="menu_top"></div>
+    <div id="banner">
+        <ul>
+            <li><a href="buildagain.html">JS Introduction</a></li>
+            <li><a href="display.html">JS Display Possibilities</a></li>
+            <li><a href="Statement.html">JS Statement</a></li>
+            <li><a href="Event.html">JS Events</a></li>
+            <li><a href="Class.html">JS Class</a></li>
+            <li><a href="Dates.html">JS Dates</a></li>
+            <li style="margin-right: 2px;"><a href="DOT.html">Web host</a></li>
+        </ul>
+    </div>
+    <div id="bottom_menu">
+        <img src="img/ov.jpg" width="1000px" height="250px" `alt="lag a' !!!">
+    </div>
+    <div id="main">
+        <div class="sidenav">
+            <div id="img_">
+                <img src="img/logo.png" width="220" height="220">
+            </div>
+            <a href="#right_1">JS Change HTML Change</a><br>
+            <a href="#right_2">JS Change HTML Attribute Values</a><br>
+            <a href="#right_3">JS Change HTML Style</a><br>
+        </div>
+        <div id="right">
+            <h1 style="text-align: center;"> JS Change HTML Change</h1><br>
+            <p style=" margin-top :0px">One of many JavaScript HTML methods is getElementById().</p>
+            <div id=right_1>
+                <h3 style="margin: 0px; ;">Example:</h3>
+                <pre style="background-color: darkgrey">
+!DOCTYPE html>
+html>
+body>
+    h2>What Can JavaScript Do?/h2>
+    p> id="demo">JavaScript can change HTML content./p>
+    button type="button" onclick='document.getElementById("demo").innerHTML= "Hello 
+    JavaScript!"'>Click Me!/button>
+/body>
+/html>
+                </pre>
+                <h7>The screen display will is: </h7>
+                <h2 style="margin: 0px">What Can JavaScript Do?</h2>
+
+                <p id="demo">JavaScript can change HTML content.</p>
+
+                <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+            </div>
+            <h1 style="text-align: center;"><b>JS Change HTML Attribute Values</b></h1>
+            <p style="margin-top :0px ;float:left">In this example JavaScript changes the value of the src (source) attribute of an img tag:</p>
+            <div id=right_2>
+                <h3 style="margin: 0px; ;">Example:</h3>
+                <pre style="background-color: darkgrey">h2>What Can JavaScript Do?/h2>
+p>JavaScript can change HTML attribute values./p>
+p>In this case JavaScript changes the value of the src (source) attribute of an image./p>
+button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light
+/button>
+img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light
+/button>
+                </pre>
+                <h7>The screen display will is: </h7>
+                <p>JavaScript can change HTML attribute values.</p>
+                <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+                <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light</button>
+                <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+                <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+            </div>
+
+            <h1 style="text-align: center;"><b>JavaScript Can Change HTML Styles (CSS)</b></h1>
+            <p style="margin-top :0px ;float:left">Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+            <div id=right_3>
+                <h3 style="margin: 0px; ;">Example:</h3>
+                <pre style="background-color: darkgrey">h2>What Can JavaScript Do?</h2>
+p id="demo">JavaScript can change the style of an HTML element.</p>
+button type="button" onclick="document.getElementById('demo').fontSize='15px'">Click Me!</button>
+                </pre>
+                <h7>The screen display will is: </h7>
+                <h2>What Can JavaScript Do?</h2>
+                <p id="demo">JavaScript can change the style of an HTML element.</p>
+                <button type="button" onclick="document.getElementById('demo').style.fontSize='15px'">Click Me!</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>

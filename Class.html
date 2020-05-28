@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Class</title>
+    <link rel="stylesheet" type="text/css" href="abc.css">
+</head>
+
+<body>
+    <div id="menu_top"></div>
+    <div id="banner">
+        <ul>
+            <li><a href="buildagain.html">JS Introduction</a></li>
+            <li><a href="display.html">JS Display Possibilities</a></li>
+            <li><a href="Statement.html">JS Statement</a></li>
+            <li><a href="Event.html">JS Events</a></li>
+            <li><a href="Class.html">JS Class</a></li>
+            <li><a href="Dates.html">JS Dates</a></li>
+            <li style="margin-right: 2px;"><a href="DOT.html">Web host</a></li>
+        </ul>
+    </div>
+    <div id="bottom_menu">
+        <img src="img/ov.jpg" width="1000px" height="250px" alt="lag a' !!!">
+    </div>
+    <div id="main">
+        <div class="sidenav">
+            <div id="img_">
+                <img src="img/logo.png" width="220" height="220">
+            </div>
+            <a href="#class_1">JavaScript Objects</a><br>
+            <a href="#right_2">JavaScript Classes</a><br>
+        </div>
+        <div id="class_1">
+            <h1> JavaScript Objects</h1><br>
+            <pre>1. You have already learned that JavaScript variables are containers for data values.
+
+This code assigns 'a simple value' (Fiat) to a 'variable' named car:
+            </pre>
+            <p><b>Example:</b></p><code>var car = "Fiat";</code>
+            <br>
+            <pre>
+                
+2. Objects are variables too. But objects can contain many values.
+
+This code assigns many values (Fiat, 500, white) to a variable named car:</pre>
+            <p><b>Example:</b></p><code>var car = {type:"Fiat", model:"500", color:"white"};
+                ;</code>
+
+        </div>
+        <div id="class_2">
+            <h1> JavaScript Classes</h1><br>
+            <p>A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.</p>
+            <p><b>Example:</b></p>
+            <pre>class Car {
+    constructor(brand) {
+        this.carname = brand;
+    }
+}
+mycar = new Car("Ford");</pre>
+            <h4>Static Methods</h4>
+            <p>Static methods are defined on the class itself, and not on the prototype</p>
+            <p><b>Example:</b></p>
+            <pre>class Car {
+    constructor(brand) {
+        this.carname = brand;}
+    static hello() {
+        return "Hello!!";
+    }
+}       
+mycar = new Car("Ford");
+document.getElementById("demo").innerHTML = Car.hello();
+            </pre>
+            <h4>Inheritance</h4>
+            <p>To create a class inheritance, use the extends keyword.</p>
+            <p><b>Example:</b></p>
+            <pre>class Car {
+    constructor(brand) {
+          this.carname = brand;}
+     present() {
+          return 'I have a ' + this.carname;}
+        }
+                  
+class Model extends Car {
+    constructor(brand, mod) {
+        super(brand);
+        this.model = mod;
+        }
+    show() {
+        return this.present() + ', it is a ' + this.model;}
+}
+                  
+mycar = new Model("Ford", "Mustang");
+document.getElementById("demo").innerHTML = mycar.show();
+            </pre>
+            <h5><b>By calling the super() method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods</b></h5>
+
+
+        </div>
+
+    </div>
+    <div id="footer"></div>
+</body>

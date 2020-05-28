@@ -1,0 +1,160 @@
+body {
+    font-family: Tahoma;
+    font-size: 15px;
+    width: 1000px;
+    margin: 0px auto
+}
+
+#menu_top {
+    background: white;
+    height: 40px;
+}
+
+#bottom_menu {
+    height: 250px;
+    width: 1000px;
+    clear: left;
+}
+
+#banner {
+    background: rgb(67, 78, 180);
+    height: 80px;
+    width: 1000px;
+}
+
+#banner ul {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#banner ul li a {
+    text-decoration: none;
+}
+
+#banner ul li {
+    list-style: none;
+    float: left;
+    display: block;
+    line-height: 80px;
+    color: white;
+    padding-left: 27px;
+    padding-right: 29px;
+    border-right: 1px solid white;
+}
+
+#main #right {
+    width: 790px;
+    background-color: white;
+    float: left;
+    min-height: 500px;
+    padding-left: 10px;
+}
+
+#main #right #right_1 {
+    width: 790px;
+    float: left;
+    height: 400px;
+    margin-top: 0px;
+}
+
+#main #right #right_2 {
+    width: 790px;
+    float: left;
+    height: 500px;
+    margin-top: 0px;
+}
+
+#main #right #right_3 {
+    width: 790px;
+    float: left;
+    height: 300px;
+    margin-top: 0px;
+}
+
+#main #left {
+    width: 200px;
+    background-color: white;
+    float: left;
+    min-height: 400px;
+}
+
+#main #left #bottom_left {
+    width: 200px;
+    height: 1400px;
+    background: green;
+}
+
+#main #left ul {
+    margin: 0px;
+    padding-left: 2px;
+    overflow-y: auto;
+}
+
+#main #left ul li {
+    background: white;
+    list-style: none;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid green;
+}
+
+#footer {
+    background: black;
+    width: 1000px;
+    text-align: center;
+    height: 60px;
+    color: red;
+    clear: left;
+}
+
+#img_ {
+    width: 236px;
+    height: 300px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 236px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #e41919;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#bottom_7 {
+    background-color: blackgrey;
+    text-align: center;
+}
+
+#class_1 {
+    margin-left: 10px;
+}
+
+#class_2 {
+    margin-left: 10px;
+}
